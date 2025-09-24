@@ -3,7 +3,7 @@ import axios from "axios";
 
 // baseURL points to backend server
 const api = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://file-management-system-101.onrender.com",
 });
 
 export default api;
