@@ -85,11 +85,11 @@ app.delete("/notes/:id", (req, res) => {
 });
 
 // Serve Vue frontend
-app.use(express.static(path.join(__dirname, "frontend/dist")));
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 // SPA fallback (for Vue router)
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
 // Start server
