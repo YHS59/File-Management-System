@@ -1,3 +1,6 @@
+### Repository Link
+[👉 GitHub Repository](https://github.com/YHS59/File-Management-System.git)
+
 ### Prerequisites
 Install following software
 - Node.js & npm
@@ -49,6 +52,20 @@ Open a separate terminal window. Navigate to your frontend folder and start the 
  - SQLite3: A file-based database.
 
 
+### Development Process — AI Usage
+Here are examples of how AI (ChatGPT) assisted and how I adapted the outputs:
+
+Example 1 — Inline editing in Vue
+- *Prompt:* `How to implement inline editing in Vue 3 using contenteditable without text jumping issues?`
+- *AI Output:* Suggested using `refs`, setting `innerText` on mount, and updating state with `@input`.
+- *My Changes:* Applied it to `titleRef` and `contentRef`, added reset on cancel, and tested typing/deletion for stable behavior.
+- *Why:* Fixed the issue where text jumped around after the first letter and gave a smooth inline-edit UX.
+
+Example 2 — Tailwind layout
+- *Prompt:* `Generate a Tailwind CSS card layout with hover animations.`
+- *AI Output:* A card with `rounded-xl`, `shadow-lg`, `hover:shadow-xl`, and gradient background.
+- *My Changes:* Reduced animation intensity, adjusted spacing, and matched gradient colors to the app.
+- *Why:* The AI design was flashy but too strong for a notes app, so I simplified it for better usability and theme consistency.
 
 
 
